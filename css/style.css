@@ -1,0 +1,896 @@
+@font-face {
+  font-family: "symbols-sedona";
+  src: url("../font/symbols-sedona.eot?60737633");
+  src: url("../font/symbols-sedona.eot?60737633#iefix") format("embedded-opentype"),
+       url("../font/symbols-sedona.woff?60737633") format("woff"),
+       url("../font/symbols-sedona.ttf?60737633") format("truetype"),
+       url("../font/symbols-sedona.svg?60737633#symbols-sedona") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	min-width: 1200px;
+	background-color: #F2F2F2;
+}
+h1 {
+	margin-top: 65px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+}
+h2 {
+	margin-top: 25px;
+	margin-bottom: 52px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 26px;
+}
+a, .btn {
+	cursor: pointer;
+}
+.grid {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+	background-color: #FEFEFE;
+	color: 000000;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.main-header {
+	position: relative;
+	background: #FFFFFF;	
+}
+.logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -68px;
+	width: 137px;
+	height: 70px;
+}
+.main-navigation .left {
+	float: left;
+}
+.main-navigation .right {
+	float: right;
+}
+.main-navigation {
+	width: 100%;	
+}
+.main-navigation ul {
+	display: table;
+	table-layout: fixed;
+	width: 480px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+.main-navigation li {
+	display: table-cell;
+	text-align: center;	
+}
+.main-navigation a {	
+	display: block;
+	padding-top: 10px;	
+	padding-bottom: 10px;
+	font-size: 14px;
+	line-height: 36px;
+	text-decoration: none;
+	color: #000000;
+}
+.main-navigation a:hover {
+	color: #81B3D2;
+}
+.main-navigation a:active {
+	color: #CACACA;
+}
+.main-navigation .current {
+	color: #766357;
+}
+.main-navigation .current:hover {
+	color: #604E43;
+}
+.main-navigation .current:active {
+	color: #DBD8D5;
+}
+.main-footer {
+	min-height: 121px;
+	background-color: #FFFFFF;
+	opacity: 0.9;
+	color: #000000;
+}
+.footer-link {
+	padding-top: 45px;
+}
+.footer-link a {
+	font-size: 21px;
+	color: #000000;
+	text-decoration: none;
+}
+.footer-social {
+	padding-top: 36px;
+}
+.social-btn {
+	display: inline-block;
+	margin-left: 4px;
+	width: 46px;
+	height: 48px;
+	vertical-align: middle;
+	text-align: center;	
+	background: #81B3D2;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "symbols-sedona";
+	font-size: 19px;
+	text-transform: none;
+	line-height: 48px;
+}
+.social-btn:hover {
+	background-color: #669EC0;
+}
+.social-btn:active {
+	background-color: #5496BD;
+	color: #94B9D2;
+}
+.icon-twitter::before { 
+	content: "\74";
+}
+.icon-facebook::before { 
+	content: "\66";
+}
+.icon-youtube::before { 
+	content: "\f39e";
+}
+.footer-copyright p {
+	margin-top: 42px;
+	font-weight: normal;
+}
+.footer-copyright a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-left: 8px;
+	width: 27px;
+	height: 35px;
+	background: url("../images/sprite.png") no-repeat;
+}
+.footer-copyright .by {
+	background-position: -230px -40px;
+}
+.footer-copyright .for {
+	background-position: -230px 0;
+}
+.footer-copyright .by:hover {
+	background-position: -305px 0;
+}
+.footer-copyright .for:hover {
+	background-position: -305px -41px;
+}
+.footer-copyright .by:active {
+	background-position: -270px 0;
+}
+.footer-copyright .for:active {
+	background-position: -270px -41px;
+}
+
+/* главная страница */
+
+.container .welcome {
+	width: 100%;
+	padding-top: 77px;
+	min-height: 431px;
+	background: 
+		url("../images/bg_white_mask.png") no-repeat center bottom,
+		url("../images/bg_index_page.jpg") no-repeat center top #335361;
+}
+.welcome img {
+	display: block;
+	margin-bottom: 51px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.welcome .image-welcome {
+	width: 256px;
+	height: 86px;
+}
+.welcome .image-sedona {
+	width: 458px;
+	height: 78px;
+	margin-bottom: 56px;
+}
+.welcome .image-because {
+	width: 296px;
+	height: 80px;
+	margin-bottom: 0;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	text-align: center;	
+}
+.features {
+	background-color: #FFFFFF;
+}
+.features-head {
+	padding: 0 300px;
+	text-align: center;
+	line-height: 26px;
+	color: #000000;
+	border-top: 1px solid transparent;
+}
+.features-head h1 {
+	font-size: 21px;
+	margin-top: 60px;
+	margin-bottom: 27px;
+}
+.features-head h2 {
+	margin-bottom: 50px; 
+	font-size: 14px;
+	font-weight: normal;
+}
+.features-list {
+	width: 100%;
+}
+.feature-item {
+	width: 280px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 35px;
+}
+.feature-title {
+	font-size: 21px;
+	line-height: 26px;
+	margin-top: 52px;
+	padding-right: 62px;
+	padding-left: 62px;
+}
+.feature-item p {
+	margin-top: 10px;
+	margin-bottom: 22px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 21px;
+}
+.features-list .main {
+	color: #FFFFFF;
+}
+.features .first-image {
+	background: url("../images/feature_image_first.jpg") no-repeat right 50% #81B3D2;
+	background-size: 66.66% auto;
+}
+.features .second-image {
+	background: url("../images/feature_image_second.jpg") no-repeat left 50% #81B3D2;
+	background-size: 66.66% auto;
+}
+.second-image .feature-item {
+	float: right;
+}
+.features-main .feature-item {
+	background: #81B3D2;
+}
+.features-secondary {
+	min-height: 256px;
+	background-color: #EEEEEE;	
+}
+.features-secondary .feature-title {
+	margin-top: 45px;	
+}
+.features-list .feature-icon {
+	position: relative;
+	width: 280px;
+	padding: 0 57px;
+	padding-top: 108px;	
+	text-align: center;
+}
+.feature-icon .feature-title {
+	margin-bottom: 21px;
+}
+.feature-icon p {
+	margin-bottom: 87px;
+	font-weight: normal;
+}
+.feature-icon::before {
+	content: "";
+	position: absolute;
+	top: 58px;
+	left: 162px;
+	width: 76px;
+	height: 76px;
+	background: url("../images/sprite.png") no-repeat;
+}
+.feature-icon.food::before {
+	background-position: -150px 0;
+}
+.feature-icon.motel::before {
+	background-position: -69px 0;
+}
+.feature-icon.souvenirs::before {
+	background-position: 5px 0;
+}
+.appointment {
+	position: relative;
+	padding-top: 47px;
+	padding-left: ;
+	padding-right:;
+	text-align: center;
+	background: #FFFFFF;
+}
+.appointment-title {
+	font-size: 30px;
+	margin-bottom: 27px;
+}
+.appointment h2 {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	margin-bottom: 44px;
+}
+.btn {
+	display: block;
+	color: #FFFFFF;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+.brown-btn {
+	background: #766357;
+}
+.blue-btn {
+	background: #81B3D2;
+}
+.brown-btn:hover {
+	background: #604E43;
+}
+.blue-btn:hover {
+	background: #669EC0;
+}
+.brown-btn:active {
+	background: #503E33;
+	color: #928A85;
+}
+.blue-btn:active {
+	background: #5496BD;
+	color: #94B9D2;
+}
+.appointment .brown-btn {
+	width: 570px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+.map {
+	width: 1200px;
+	height: 470px;
+	border: 0;	
+	background: url("../images/map.jpg") no-repeat scroll 50% 50% #F2F1EF;
+}
+
+/* всплывающая форма */
+
+.modal-content {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	top: 291px;
+	left: 50%;
+	margin-left: -285px;	
+	width: 460px;
+	padding: 55px;
+	background: #FFFFFF;
+	color: #000000;	
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+input.btn-form {
+	display: none;
+}
+.btn-form:checked ~ .modal-content {
+	display: block;
+}
+.search-form input[type="text"], .search-form label {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 46px;
+}
+.search-form label {
+	position: relative;
+	width: 105px;
+	margin-right: 5px;
+	text-align: left;
+	vertical-align: middle;
+}
+.search-form input[type="text"] {
+	margin-right: 0;
+	margin-bottom: 30px;
+	text-align: left;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;	
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	background: #F2F2F2;
+}
+.search-form input:hover {
+	background: #EBEBEB;
+}
+.search-form input[type="text"]:focus {
+	background: #FFFFFF;
+	margin: -2px;
+	margin-right: -2px;
+	margin-bottom: 28px;
+	border: 2px solid #E5E5E5;
+	outline: none;
+}
+.number-field input[type="text"]:hover {
+	background: #F2F2F2;
+}
+.number-field input[type="text"]:focus {
+	border: none;
+	background: #F2F2F2;
+	margin: 0 -2px;
+	text-align: center;
+}
+input::-webkit-input-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;
+}
+input:-moz-placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;
+}
+.search-form .date {
+	width: 297px;
+	padding: 10px;
+	padding-right: 38px;	
+}
+.search-form .date-label::after {
+	content: "\e800";	
+	position: absolute;
+	z-index: 15;
+	top: 0;
+	right: -335px;
+	font-family: "symbols-sedona";
+	font-size: 16px;	
+	color: #C2C2C2;
+	cursor: pointer;
+}
+.date-label:hover::after {	
+	color: #000000;
+}
+.date-label:active::after {	
+	color: #81B3D2;
+}
+.number-label-children {
+	max-width: 55px;
+	margin-left: 50px;
+}
+.number-field .icon-menus::before {
+	content: "\e802";
+	font-family: "symbols-sedona";	
+	color: #C2C2C2;	
+}
+.number-field .icon-plus::before{
+	content: "\e801";
+	font-family: "symbols-sedona";	
+	color: #C2C2C2;	
+} 
+.icon-menus:hover::before, .icon-plus:hover::before {
+	color: #000000;	
+} 
+.icon-menus:active::before, .icon-plus:active::before {
+	color: #81B3D2;	
+} 
+.number-field {
+	display: inline-block;
+	vertical-align: baseline;	
+	line-height: 38px;
+	width: 114px;
+	height: 36px;
+	padding: 0px;
+	margin: 0;
+	font-size: 0px;
+	background: #F2F2F2;
+}
+.number-field input[type="text"] {
+	width: 38px;
+	min-height: 36px;
+	margin-left: -4px;	
+	text-align: center;
+	line-height: 26px;
+	font-size: 14px;
+	background-color: #F2F2F2;
+}
+.number-field a {
+	display: inline-block;	
+	vertical-align: top;
+	width: 38px;
+	height: 38px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #F2F2F2;
+	text-decoration: none;
+}
+.number-field .icon-plus {
+	margin-left: -4px;
+}
+.modal-content .blue-btn {
+	width: 100%;
+	border: none;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+@-webkit-keyframes bounce {
+ 	0% {
+		transform: translateY(-1500px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.modal-content-show {
+	display: block;
+	-webkit-animation: bounce 0.6s;
+	animation: bounce 0.6s;
+}
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
+}
+@-webkit-keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
+}
+.modal-error {
+	-webkit-animation: shake 0.6s;
+	animation: shake 0.6s;
+}
+
+/* страница hotels.html  */
+
+.container .setting {
+	background:  url("../images/bg_hotels_page.jpg") no-repeat center top #355467;
+	color: #FFFFFF;
+}
+.offer-list {
+	float: left;
+	margin-left: 72px; 
+	margin-right: 43px;
+}
+.offer-title {
+	margin-top: 27px ;
+	margin-bottom: 24px;;	
+	font-size: 16px;
+	font-weight: bold;
+}
+.offer-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.offer-list li {
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+.offer-list input[type="checkbox"] {
+	display: none;
+}
+.offer-list input[type="checkbox"] + label {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.offer-list input[type="checkbox"] + label::before {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 24px;
+	margin-right: 20px;
+	content: "\2610";
+	font-family: "symbols-sedona";
+	font-weight: bold;
+	color: #B5B5B5;
+}
+.offer-list input[type="checkbox"]:checked + label::before {
+	content: "\2611";
+	margin-right: 17px;
+	color: #B5B5B5;
+}
+.offer-list input[type="checkbox"] + label:hover::before {
+	color: #FFFFFF;
+}
+.offer-list input[type="checkbox"]:disabled + label::before {
+	color: #606262;
+}
+.range-filter {
+	float: right;
+	width: 318px;
+	margin-right: 82px;
+	margin-bottom: 34px;
+}
+.range-filter .offer-title {
+	margin-bottom: 10px;
+}
+.range-controls {
+	position: relative;
+	height: 30px;
+	margin-bottom: 4px;
+	padding: 0;
+	background: transparent;
+}
+.range-controls .scale{
+	margin-top: 20px;
+	height: 2px;
+	background: #928381;
+}
+.range-controls .bar {
+	height: 2px;
+	background: #FFFFFF;
+}
+.range-controls .toggle { 
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	border: 8px solid white;
+	background:#ababab;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0 2px 2px 0 #434141;
+}
+.range-controls .max-toggle {
+	left: 254px;
+}
+.range-controls .toggle:hover {
+	background: #1C4F80;	
+}
+.price-controls {
+	padding: 5px 0;
+	border: 2px solid #FFFFFF;
+	background: transparent;
+	text-align: right;
+}
+.price-controls input {
+	max-width: 74px;
+	padding-right: 1px;
+	margin-left: 0;
+	border: none;
+	background: transparent;
+	font-size:16px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color: #FFFFFF;
+}
+.price-controls .min-price {
+	margin-right: 53px;
+	border-right: 2px solid #FFFFFF;
+}
+.range-filter .btn {
+	padding: 3px 34px;
+	margin: 0 90px;
+	font-size: 14px;
+	font-weight: normal;
+	background: transparent;
+	border: 2px solid #FFFFFF;
+}
+.total .amount {
+	float: left;
+	width: 135px;
+	margin-top: 4px;	
+	padding: 24px 0;
+	margin-right: 30px;
+	font-size: 21px;
+	vertical-align: baseline;
+}
+.total .sort {
+	float: left;
+	width: 875px;
+	margin-right: 5px;
+	margin-top: 6px;
+	padding: 24px 0;
+	margin-right: auto;
+	line-height: 28px;
+	font-size: 12px;
+	vertical-align: baseline;
+}
+.sort a:first-child {
+	margin-left: 36px;
+}
+.sort a {
+	position: relative;
+	margin-right: 30px;
+	text-decoration: none;
+	color: #CACACA;
+	border-bottom: 1px dotted #81B3D2;
+}	
+.sort .current {
+	color: #81B3D2;
+	border-bottom: none;
+}
+.sort a:hover {
+	color: #81B3D2;
+}
+.sort a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.icon-down-dir::before {
+	content: "\25bc";
+	font-family: "symbols-sedona";
+	font-size: 21px;
+	color: #CCCCCC;	
+}
+.icon-up-dir::before {
+	content: "\25b2";
+	font-family: "symbols-sedona";	
+	color: #CCCCCC;
+	font-size: 21px;
+}
+.sort>.icon-down-dir, .sort>.icon-up-dir {
+	float: right;
+	margin-right: -7px;
+	margin-left: 19px;	
+	border-bottom: none;
+}
+.icon-down-dir:hover::before, .icon-up-dir:hover::before{
+	color: #000000;
+}
+.icon-down-dir:active::before, .icon-up-dir:active::before{
+	color: #81B3D2;
+}
+.icon-down-dir.current::before, .icon-up-dir.current::before{
+	color: #81B3D2;
+}
+.total, .hotel-item {
+	width: 1050px;
+	padding-left: 71px;
+	padding-right: 80px;
+	margin-bottom: -1px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.hotel-item {
+	font-size: 14px;
+	font-weight: normal;
+}
+.hotel-photo {
+	float: left;
+	width: 135px;
+	margin-right: 30px;
+	margin-top: 29px;
+	margin-bottom: 29px;
+}
+.hotel-photo img {
+	max-width: 100%;
+}
+.hotel-info {
+	float: left;
+	width: 270px;
+	padding-right: 480px;
+	margin-right: 5px;
+}
+.hotel-rating {
+	float: right;
+	width: 100px;
+}
+.hotel-title {
+	display: block;
+	margin-top: 24px;
+	margin-bottom: 10px;
+	font-size: 21px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.hotel-title:hover {
+	color: #81B3D2;
+}
+.hotel-title:active {
+	color: #CACACA;
+}
+.hotel-info .type {
+	display: inline-block;
+	vertical-align: top;
+	width: 113px;
+}
+.hotel-info .price {
+	display: inline-block;
+	vertical-align: top;
+	width: 142px;
+}  
+.hotel-info .btn {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+	padding: 0 17px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.hotel-info .blue-btn {
+	margin-right: 3px;
+}
+.hotel-rating::after {
+	position: absolute;
+	top: -66px;
+	right: 0;
+	font-family: "symbols-sedona";	
+	font-size: 18px;
+
+	text-align: right;
+	letter-spacing: 7px;
+	color: #81B3D2;
+}  
+.amara .hotel-rating::after {
+	content: "\2605 \2605 \2605 \2605";
+}
+.desert .hotel-rating::after {
+	content: "\2605 \2605";
+}
+.villas .hotel-rating::after {
+	content: "\2605 \2605 \2605";
+}
+.hotel-rating {
+	position: relative;
+	margin-top: 95px;
+	padding: 5px 5px;
+	text-align: center;
+	background: #F2F2F2;
+	color: #666666;
+}

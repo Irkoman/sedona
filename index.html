@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="седона, аризона, бургер">
+        <title>Sedona</title>
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>  
+        <div class="grid">
+            <header class="main-header">
+                <a class="logo" href="index.html"><img src="images/logo.png" width="137" height="70" alt="Sedona"></a>
+                <nav class="main-navigation clearfix">
+                    <ul class="left">
+                        <li>
+                            <a class="current" href="index.html">Информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото и видео</a>
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li>
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li>
+                            <a href="hotels.html">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <div class="container">
+            
+                <!-- Главная картинка-intro -->
+            
+                <div class="welcome">
+                    <img class="image-welcome" src="images/welcome_image_welcome.png" width="256" height="86" alt="Welcome">
+                    <img class="image-sedona" src="images/welcome_image_sedona.png" width="458" height="78" alt="Sedona">
+                    <img class="image-because" src="images/welcome_image_because.png" width="296" height="80" alt="&laquo;Because the Grand Canyon sucks!&raquo;">
+                </div>
+           
+                <!-- Секция "Почему Седона круче" -->
+            
+                <section class="features clearfix">
+                    <div class="features-head">
+                            <h1>Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+                            <h2>Рассмотрим 5 причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</h2>
+                    </div>
+                    <div class="features-list first-image clearfix">
+                        <div class="feature-item main column">
+                            <div class="feature-title">Настоящий городок</div>
+                            <p>&nbsp;&mdash; №1&nbsp;&mdash;</p>
+                            <p>Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+                        </div>
+                    </div>
+                    <div class="features-list clearfix">  
+                        <div class="feature-icon motel column">
+                            <div class="feature-title">Жилье</div>
+                            <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+                        </div>
+                        <div class="feature-icon food column">
+                            <div class="feature-title">Еда</div>
+                            <p>Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
+                        </div>
+                        <div class="feature-icon souvenirs column">
+                            <div class="feature-title">Сувениры</div>
+                            <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+                        </div>
+                    </div>    
+                    <div class="features-list second-image clearfix">
+                        <div class="feature-item main column">
+                            <div class="feature-title">Там есть Мост Дьявола</div>
+                            <p>&nbsp;&mdash; №2&nbsp;&mdash;</p>
+                            <p>Да, по&nbsp;нему можно пройти! Если, конечно, Вы&nbsp;осмелитесь</p>
+                        </div>
+                    </div>    
+                    <div class="features-list features-secondary clearfix">     <div class="feature-item column">
+                            <div class="feature-title">Небольшая площадь</div>
+                            <p>&nbsp;&mdash; №3&nbsp;&mdash;</p>
+                            <p>Все достопримечательности находятся очень близко</p>
+                        </div>
+                        <div class="feature-item column">
+                            <div class="feature-title">Красивая дорога</div>
+                            <p>&nbsp;&mdash; №4&nbsp;&mdash;</p>
+                            <p>Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+                        </div>
+                        <div class="feature-item column">
+                            <div class="feature-title">Мало туристов</div>
+                            <p>&nbsp;&mdash; №5&nbsp;&mdash;</p>
+                            <p>Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+                        </div>
+                    </div>    
+                </section>
+        
+                <!-- Выбор гостиницы и карта -->
+        
+                <div class="appointment">
+                    <div class="appointment-title">Заинтересовались?</div>
+                    <h2>Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем Вам лучшие предложения гостиниц в&nbsp;Седоне</h2>
+                    <input class="btn-form" type="checkbox" name="btn-form" id="btn-form">
+                    <label for="btn-form" class="open-form btn brown-btn">Поиск гостиницы в&nbsp;Седоне</label>
+                                       
+                    <div class="modal-content">
+                        <form class="search-form" action="/echo" method="post">
+                            <label class="date-label" for="arrival-date">Дата заезда:</label>
+                            <input class="date" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2014" required>
+                            <label class="date-label" for="leaving-date">Дата выезда:</label>
+                            <input class="date" type="text" name="leaving-date" id="leaving-date" placeholder="4 июля 2014" required>
+                            <label for="adult">Взрослые:</label>
+                            <div class="number-field">
+                            <a href="#" class="icon-menus"></a>    
+                            <input class="number" type="text" name="adult" id="adult" placeholder ="2" required>
+                            <a href="#" class="icon-plus"></a> 
+                            </div>
+                            <label class="number-label-children" for="children">Дети:</label>
+                            <div class="number-field">
+                            <a href="#" class="icon-menus"></a> 
+                            <input class="number" type="text"  name="children" id="children" placeholder="0" required>
+                            <a href="#" class="icon-plus"></a>
+                            </div>
+                            <a href="#" class="search btn blue-btn">Найти</a>
+                        </form>
+                    </div>
+                </div>
+                <div id="map-canvas" class="map"></div>
+                <footer class="main-footer clearfix">
+                    <div class="footer-link column">
+                        <a href="#visitsedona">#visitsedona</a>
+                    </div>
+                    <div class="footer-social column">
+                        <a href="#" class="social-btn icon-twitter"></a>
+                        <a href="#" class="social-btn icon-facebook"></a>
+                        <a href="#" class="social-btn icon-youtube"></a>
+                    </div>
+                    <div class="footer-copyright column">
+                        <p>Website by 
+                        <a href="#" class="by"></a>
+                            for
+                        <a href="#" class="for"></a>
+                        </p>
+                    </div>
+                </footer>
+            </div>     
+        </div> <!-- закрыт "grid" -->
+        <script src="js/modal.js"></script>      
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="js/map.js"></script>
+    </body>
+</html>
